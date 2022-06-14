@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./component/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       sm: "576px",
@@ -13,6 +10,9 @@ module.exports = {
 
       lg: "1440px",
       // => @media (min-width: 1440px) { ... }
+    },
+    colors: {
+      primary: "#17C0B1",
     },
     extend: {},
   },
