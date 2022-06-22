@@ -11,10 +11,23 @@ module.exports = {
       lg: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
-    colors: {
-      primary: "#17C0B1",
+    container: {
+      center: true,
+      padding: "16px",
     },
-    extend: {},
+
+    extend: {
+      colors: {
+        primary: "#17C0B1",
+        tile: "#20323a",
+        instagram: "#DB4088",
+        grey: "#6A717F",
+        white: "#fff",
+      },
+      screens: {
+        "2xl": "1320px",
+      },
+    },
   },
   plugins: [],
 };

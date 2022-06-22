@@ -11,18 +11,22 @@ const toolbar = (props: any) => (
       <div className="toggle-btn">
         <SideMenu click={props.drawerToggleClickHandler} />
       </div>
-      <div className="toolbar_logo"></div>
+      <div className="toolbar_logo">
+        <span>
+          Wahyu <span className="text-lg text-primary">Setiawan</span>
+        </span>
+      </div>
       <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-            <Link href="/">Product</Link>
+            <Link href="/">About Me</Link>
           </li>
           <li>
-            <Link href="/">User</Link>
+            <Link href="/">Project</Link>
           </li>
           <li>
-            <Link href="/">Music</Link>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </div>

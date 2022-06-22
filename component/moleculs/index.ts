@@ -1,4 +1,4 @@
 import Navbar from "./navbar";
-import BackDrop from "./navbar/BackDrop";
+import BackDrop from "./navbar/backDrop";
 
 export { Navbar, BackDrop };
