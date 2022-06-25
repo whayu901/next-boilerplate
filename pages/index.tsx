@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import { Navbar } from "../component/moleculs";
+import ClientLogos from "../component/moleculs/client-logo";
 
 const Home: NextPage = () => {
   return (
@@ -130,6 +131,94 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Portofolio */}
+      <section id="portofolio" className="bg-slate-100 pt-36 pb-16">
+        <div className="container">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-16 max-w-xl text-center">
+              <h4 className="mb-3 text-lg font-bold uppercase text-primary">
+                About Me
+              </h4>
+              <h2 className="mb-16 font-bold text-tile">New Project</h2>
+              <p className="text-base font-medium text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, incidunt aspernatur repudiandae, eius voluptas sunt ad,
+                tempore placeat dolorem ipsam autem? Officia consequuntur
+                voluptatum animi maxime ratione vel eius aliquid!
+              </p>
+            </div>
+          </div>
+
+          <div className="flex w-full flex-wrap justify-center px-4 ">
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="overflow-hidden rounded-md shadow-md">
+                <img src="/koins.png" alt="koins" width={"100%"} />
+              </div>
+              <h3 className="mt-5 mb-3 font-semibold text-tile">
+                K-oins Survey App
+              </h3>
+              <p className="text-base font-medium text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores consequuntur delectus deserunt dolore debitis,
+                possimus aliquam ut, facilis eligendi ipsam, nihil id dolores
+                totam ea commodi fugiat vel. Atque, illum!
+              </p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="overflow-hidden rounded-md shadow-md">
+                <img src="/koins.png" alt="koins" width={"100%"} />
+              </div>
+              <h3 className="mt-5 mb-3 font-semibold text-tile">
+                K-oins Survey App
+              </h3>
+              <p className="text-base font-medium text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores consequuntur delectus deserunt dolore debitis,
+                possimus aliquam ut, facilis eligendi ipsam, nihil id dolores
+                totam ea commodi fugiat vel. Atque, illum!
+              </p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="overflow-hidden rounded-md shadow-md">
+                <img src="/koins.png" alt="koins" width={"100%"} />
+              </div>
+              <h3 className="mt-5 mb-3 font-semibold text-tile">
+                K-oins Survey App
+              </h3>
+              <p className="text-base font-medium text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores consequuntur delectus deserunt dolore debitis,
+                possimus aliquam ut, facilis eligendi ipsam, nihil id dolores
+                totam ea commodi fugiat vel. Atque, illum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Client */}
+      <section className="flex min-h-screen flex-col justify-center gap-16 md:gap-32">
+        <div className="flex flex-col items-center justify-center ">
+          <h3 className="mb-10 text-center text-xl font-bold">
+            <span className="whitespace-nowrap">Trusted By</span>{" "}
+            <span className="whitespace-nowrap ">
+              Some of the apps you use daily
+            </span>
+          </h3>
+        </div>
+        <div className="flex items-center justify-center sm:w-full md:container">
+          <ClientLogos />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="container mx-auto lg:max-w-[70%] lg:px-10">
+            <h3 className="px-10 text-center text-3xl !leading-[3.5rem] tracking-tight lg:text-4xl">
+              We believe in good communication and a fully transparent
+              development process.
+            </h3>
           </div>
         </div>
       </section>
