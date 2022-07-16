@@ -2,7 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { Navbar } from "../component/moleculs";
+import { Navbar, Section } from "../component/moleculs";
 import ClientLogos from "../component/moleculs/client-logo";
 
 const Home: NextPage = () => {
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Navbar />
 
       {/* Section Hero */}
-      <section id="home" className="pt-36">
+      <Section id="home" className="pt-36">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
@@ -53,10 +53,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Section About me */}
-      <section id="about" className="pt-36 pb-32">
+      <Section id="about" className="pt-36 pb-32">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="mb-10 w-full px-4 lg:w-1/2">
@@ -133,10 +133,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Section Portofolio */}
-      <section id="portofolio" className="bg-slate-100 pt-36 pb-16">
+      <Section id="portofolio" className="bg-slate-100 pt-36 pb-16">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
@@ -198,10 +198,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Section Client */}
-      <section className="flex min-h-screen flex-col justify-center gap-16 md:gap-32">
+      <Section className="flex min-h-screen flex-col justify-center gap-16 md:gap-32">
         <div className="flex flex-col items-center justify-center ">
           <h3 className="mb-10 text-center text-xl font-bold">
             <span className="whitespace-nowrap">Trusted By</span>{" "}
@@ -221,7 +221,7 @@ const Home: NextPage = () => {
             </h3>
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };

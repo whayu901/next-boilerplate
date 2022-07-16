@@ -1,0 +1,27 @@
+name: PipelineNext
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  lintTest:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies"
+          npm install
+      - name: Run lint
+        run: |
+          echo "Running lint"
+          npm run lint
+      - name: Run tests
+        run: |
+          echo "Running tests"
+          npm run test
+        env:
+          CI: true
