@@ -11,17 +11,26 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v2
+
       - name: Install dependencies
         run: |
           echo "Installing dependencies"
           npm install
+
       - name: Run lint
         run: |
           echo "Running lint"
           npm run lint
-      - name: Run tests
+
+      - name: "Deploy to Vercel"
         run: |
-          echo "Running tests"
-          npm run test
+          prodRun=""
+          if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
+            prodRun="--prod"
+          fi
+
+          npx vercel --token ${VERCEL_TOKEN} $prodRun
         env:
-          CI: true
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
