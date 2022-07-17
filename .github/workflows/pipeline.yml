@@ -23,7 +23,7 @@ jobs:
           npm run lint
 
       - name: Deploy to Production
-        uses: amondnet/vercel-action@v20
+        uses: actions/checkout@v2
         id: deploy-vercel-production
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
